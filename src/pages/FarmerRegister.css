@@ -1,0 +1,78 @@
+.fr-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e9fbe5, #f6fff1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fr-form {
+  background: white;
+  width: 380px;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: slideUp 0.6s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fr-form h2 {
+  text-align: center;
+  color: #1f3b0a;
+  margin-bottom: 10px;
+}
+
+.fr-form input,
+.fr-form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+.fr-form input:focus,
+.fr-form textarea:focus {
+  border-color: #1f3b0a;
+  box-shadow: 0 0 0 2px rgba(31,59,10,0.1);
+}
+
+.fr-form textarea {
+  resize: none;
+  height: 60px;
+}
+
+.fr-form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #1f3b0a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.fr-form button:hover {
+  background: #274d10;
+  transform: translateY(-2px);
+}
+
+.login-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-link span {
+  color: #1f3b0a;
+  font-weight: bold;
+  cursor: pointer;
+}

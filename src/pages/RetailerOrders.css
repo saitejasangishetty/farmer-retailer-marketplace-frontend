@@ -1,0 +1,36 @@
+.ro-container {
+  padding: 40px;
+}
+
+.ro-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ro-table th, .ro-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  color: white;
+}
+
+.status.PLACED { background: gray; }
+.status.ACCEPTED { background: green; }
+.status.DISPATCHED { background: orange; }
+.status.DELIVERED { background: blue; }
+.status.REJECTED { background: red; }
+
+.order-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}

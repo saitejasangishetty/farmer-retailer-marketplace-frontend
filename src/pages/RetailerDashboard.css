@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.rd-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7f3;
+}
+
+/* ===== SIDEBAR ===== */
+
+.rd-sidebar {
+  width: 240px;
+  background: #1f3b0a;
+  color: white;
+  padding: 25px 20px;
+}
+
+.rd-sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.rd-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rd-sidebar li {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.rd-sidebar li:hover,
+.rd-sidebar .active {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ===== MAIN ===== */
+
+.rd-main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* HEADER */
+
+.rd-header {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.rd-header-right span {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* CARDS */
+
+.rd-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.rd-card {
+  padding: 20px;
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.rd-card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* COLORS */
+
+.green { background: #2ecc71; }
+.blue { background: #3498db; }
+.orange { background: #f39c12; }
+
+/* SECTION */
+
+.rd-section {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* PRODUCTS */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.product-card {
+  background: #eef2ea;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.done {
+  color: green;
+  font-weight: bold;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+.menu-item {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.menu-item:hover {
+  background: #e6f5e6;
+}

@@ -1,0 +1,73 @@
+.fl-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fl-form {
+  background: white;
+  padding: 40px;
+  width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeIn 0.6s ease;
+}
+
+.fl-form h2 {
+  text-align: center;
+  color: #1b5e20;
+}
+
+.fl-form label {
+  font-weight: 600;
+}
+
+.fl-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.fl-form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fl-form button:hover {
+  background: #2e7d32;
+}
+
+.fl-link {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.fl-link a {
+  color: #1b5e20;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fl-error {
+  background: #ffe6e6;
+  color: #c62828;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
